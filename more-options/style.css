@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oxygen+Mono&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oxygen+Mono&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 :root {
   --gray: #23242e;
@@ -16,6 +17,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   height: 100vh;
   color: #23242ee7;
@@ -53,6 +55,7 @@ body {
   height: 2rem;
   transition: transform 0.3s ease;
 }
+
 .menu {
   position: absolute;
   top: 6rem;
@@ -80,9 +83,11 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
 }
+
 #options {
   display: none;
 }
+
 .menu-title {
   color: #23242ee7;
   font-size: 2rem;
@@ -96,9 +101,15 @@ body {
   list-style: none;
   border-bottom: 2px solid #e8e8e8;
 }
+
+.list-item:hover {
+  background-color: #f3f3f3
+}
+
 .list-item:last-of-type {
   border-bottom: unset;
 }
+
 .menu-options {
   display: flex;
   justify-content: space-between;
@@ -115,9 +126,11 @@ body {
 .menu-options .option {
   color: var(--gray);
 }
+
 .menu-options .option svg {
   margin-right: 1rem;
 }
+
 .menu-options .option svg > path {
   stroke: var(--gray) !important;
 }
